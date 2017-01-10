@@ -1,0 +1,67 @@
+*
+  margin: 0
+  padding: 0
+
+header
+  display: block
+  position: relative
+  background: #333
+  height: 50px
+  width: 100%
+
+header
+  div
+    display: flex
+    height: 50px
+    min-width: 33%
+    float: left
+    align-items: center
+    justify-content: center
+    font-family: sans-serif
+    color: white
+
+  div.github
+    min-width: 34%
+
+  div.github a
+    color: white
+
+section#main
+  display: flex
+  min-height: calc(100vh - 100px)
+  align-items: center
+  justify-content: center
+  position: relative
+  background-color: white
+
+div.parallax
+  height: calc(100vh - 100px)
+  width: 100%
+  perspective: 1px
+  overflow-x: hidden
+  overflow-y: auto
+
+div.parallax
+  div.parallaxLayer
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    padding: 100vh 0
+  div.layerBack
+    transform: translateZ(-1px) scale(2)
+    background: rgba(255,0,255,0.5)
+  div.layerBase
+    transform: translateZ(0px)
+    background: rgba(0,255,255,0.5)
+
+footer
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  height: 50px
+  background: #333
+  color: #fff
+  font-family: monospace
+  text-align: center
